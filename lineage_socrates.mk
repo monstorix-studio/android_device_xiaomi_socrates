@@ -20,5 +20,21 @@ PRODUCT_MODEL := 22127RK46C
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 
+# AviumUI Configs
+AVIUM_MAINTAINER := Monstorix
+AVIUM_SETTINGS_SOC_MODEL_NAME := Qualcomm Snapdragon 8Gen2
+AVIUM_SETTINGS_DEVICE_CODENAME := Redmi K60 Pro
+AVIUM_IS_OFFICIAL := false
+WITH_GMS := true
+AVIUM_FORCE_SET_FAKE_PROP := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/socrates/socrates:15/AQ3A.250226.002/OS3.0.4.0.VMKCNXM:user/release-keys
+
+# Force using release-keys
+ifeq ($(TARGET_BUILD_VARIANT),user)
+    BUILD_KEYS := release-keys
+endif
+
+# replace the prop for release-keys
+PRODUCT_PROPERTY_OVERRIDES += ro.build.tags=release-keys
