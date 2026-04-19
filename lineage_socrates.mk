@@ -30,8 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Maintainer Name
 INFINITY_MAINTAINER := "MokalLera"
 
-# Whether the device supports Fingerprint On Display
-TARGET_HAS_UDFPS := true
-
 # Whether Including Google Apps
 WITH_GAPPS := true
