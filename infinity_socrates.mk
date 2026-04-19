@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/socrates/device.mk)
 # Inherit Infinity configurations
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_socrates
+PRODUCT_NAME := infinity_socrates
 PRODUCT_DEVICE := socrates
 PRODUCT_MODEL := 22127RK46C
 PRODUCT_BRAND := Redmi
