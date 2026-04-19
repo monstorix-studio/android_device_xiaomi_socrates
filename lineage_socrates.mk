@@ -11,8 +11,8 @@ $(call inherit-product, build/make/target/product/core_64_bit_only.mk)
 # Inherit device-specific configurations
 $(call inherit-product, device/xiaomi/socrates/device.mk)
 
-# Inherit LineageOS configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit Infinity configurations
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_socrates
 PRODUCT_DEVICE := socrates
