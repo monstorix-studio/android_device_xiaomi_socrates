@@ -1,0 +1,34 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Inherit common AOSP configurations
+$(call inherit-product, build/make/target/product/full_base_telephony.mk)
+$(call inherit-product, build/make/target/product/core_64_bit_only.mk)
+
+# Inherit device-specific configurations
+$(call inherit-product, device/xiaomi/socrates/device.mk)
+
+# Inherit Infinity configurations
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_socrates
+PRODUCT_DEVICE := socrates
+PRODUCT_MODEL := 22127RK46C
+PRODUCT_BRAND := Redmi
+PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=Redmi/socrates/socrates:15/AQ3A.250226.002/OS3.0.5.0.VMKCNXM:user/release-keys
+
+# Sign the build
+-include vendor/lineage-priv/keys/keys.mk
+
+# Infinity X
+# Maintainer Name
+INFINITY_MAINTAINER := "MokalLera"
+
+# Whether Including Google Apps
+WITH_GAPPS := true
