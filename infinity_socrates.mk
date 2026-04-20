@@ -31,4 +31,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 INFINITY_MAINTAINER := "MokalLera"
 
 # Whether Including Google Apps
-WITH_GAPPS := true
+WITH_GAPPS := false
