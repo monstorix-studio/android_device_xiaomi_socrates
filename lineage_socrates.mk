@@ -41,3 +41,6 @@ endif
 
 # replace the prop for release-keys
 PRODUCT_PROPERTY_OVERRIDES += ro.build.tags=release-keys
+
+# MicroG
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
