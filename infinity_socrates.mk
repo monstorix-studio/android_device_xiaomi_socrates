@@ -24,7 +24,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/socrates/socrates:16/BP2A.250605.031.A3/OS3.0.304.0.WMKCNXM:user/release-keys
 
 # Infinity Configs
-INFINITY_MAINTAINER := Monstorix
+INFINITY_MAINTAINER := MokalLera
 INFINITY_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := false
 
